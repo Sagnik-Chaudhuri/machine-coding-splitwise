@@ -1,16 +1,18 @@
 class User:
-    def __init__(self, id, name) -> None:
+    def __init__(self, id, name, email, mobile) -> None:
         self.id = id
         self.name = name
+        self.email = email
+        self.mobile = mobile
 
-    def get_name(self):
-        return self.name
-
-    def set_name(self, name):
-        self.name = name
-
-    def get_id(self):
+    def get_user_id(self):
         return self.id
 
-    def set_id(self, id):
+    def get_user_name(self):
+        return self.name
+
+    def set_user_id(self, id):
         self.id = id
+
+    def set_user_name(self, name):
+        self.name = name
